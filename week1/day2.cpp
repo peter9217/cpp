@@ -15,9 +15,9 @@ int main() {
     /*-  나올 때까지 주석*/
     int  ab = 0;
     ab=Function(3);
-    cout << ab;   // 쓰지 않으면 warning이 뜸
+    // cout << ab;   // 쓰지 않으면 warning이 뜸
     cout << "end";
     
     return 0;
 }
-// 브랜치 생성
+// 브랜치 생성 소스트리
