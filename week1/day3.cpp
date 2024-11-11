@@ -17,17 +17,19 @@ int main(){
     cout << "\"\'\?\\\n"<<"sasd";
     width=5;
     cout<<width<<"\n";
-    enum days {aaa, bbb, ccc, sunday};
-    cout << days{aaa};
-    cout << days{bbb};
-    cout << days{ccc}<<"\n";
-    cout << days{sunday}<<"\n";
+    cout<<"-------------"<<"\n";
+    enum days {aaa=0, bbb=1, ccc=2, sunday=3};
+    cout << days(4)<<"\n";
+    cout << days::bbb;
+    cout << days::ccc<<"\n";
+    cout << days::sunday<<"\n";
+    cout << "---------------\n";
     days daysOff;
     int x;
     cin >> x;
     daysOff= days(x);
     if(daysOff==aaa)
-        cout << daysOff<<"\n";
+        cout << daysOff <<"-------------------\n";
     else cout << "asd";
     return 0;
 

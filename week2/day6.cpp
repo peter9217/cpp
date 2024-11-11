@@ -18,7 +18,7 @@ public:
     }
     ~cat(){};
     void setName(const string newName){
-        name=newName;
+        name=newName; 
     }
     string getName() const {
         return name;
@@ -29,7 +29,7 @@ public:
 };
 
 int main(){
-    cat rommy;
+    cat rommy=cat();
     rommy.setName("로미");
     cout << rommy.getName();
     cat semmy("새미",2);
