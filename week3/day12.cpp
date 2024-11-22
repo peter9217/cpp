@@ -3,26 +3,26 @@
 
 using namespace std;
 
-class cat {
+class Cat {
     protected:
         string name;
         int age;
     public:
-        cat(const string& objName, int myAge) : name(objName), age(myAge) {}
+        Cat(const string& objName, int myAge) : name(objName), age(myAge) {}
         virtual void meow() const {
         cout << "moew: " << name << endl;
     
         }
 };
-class family {
+class Family {
     public:
     void say() {
         cout << "안녕하세요 가족입니다."; 
     }
 };
-class kitty : public cat, public family{
+class Kitty : public Cat, public Family{
     public:
-        kitty(const string& objName, int myAge) : cat(objName, myAge) {}
+        Kitty(const string& objName, int myAge) : Cat(objName, myAge) {}
         void meow() const override {
             cout << "moewwwwww: " << name <<endl;
         } 
@@ -30,9 +30,9 @@ class kitty : public cat, public family{
 
 
 int main(){
-    kitty rommy("rommy", 10);
+    Kitty rommy("rommy", 10);
     rommy.meow();
-    kitty sammy("sammy", 10);
+    Kitty sammy("sammy", 10);
     sammy.meow();
     rommy.say();
 

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <functional>
+
 using namespace std;
 int spring(int a);
 int spring_t(int a);
@@ -38,7 +39,9 @@ int main(){
     function<int(int)> func = [](int a) { return spring(a); };
     cout << func(3);
     auto b_spring = bind([](int a) { return spring(a); }, 10);
+    cout << "--------"<<endl ;
     cout << b_spring() ;
+
     return 0;
 
 }

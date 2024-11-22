@@ -7,7 +7,6 @@ int main(){
     int* p = (int*)&a;
     cout << p <<"\n";
     cout << *p <<"\n";
-    cout << *p <<"\n";
     cout << &p <<"\n";
     return 0;
 }

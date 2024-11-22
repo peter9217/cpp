@@ -32,7 +32,7 @@ class Int{
     }
 };
 
-class Shape {
+class VShape {
 public:
     virtual void draw() = 0; // 순수 가상 함수
 };

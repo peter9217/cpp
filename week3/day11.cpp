@@ -7,8 +7,8 @@ int main(){
     int arr[5];
     int arrC[] = {1,2,3,4,5};
     string arrS[]= {"asdfg", "asdd"};
-    cout << arr[0];
-    cout << arrC[0];
+    cout << arr[0]<<endl;
+    cout << arrC[0]<<endl;
     cout << arrS[0]<<endl;
     for(int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++){
         cout << i ;
@@ -22,6 +22,8 @@ int main(){
     vector<int> vec2(5);  // 0으로 초기화된 5의 크기를 가진 벡터
     vector<int> vec3(5, 10); // 10으로 초기화된 5의 크기 벡터
     vector<int> vec4 = {1,2,3};  // 초기값을 주어 선언
+
+
 
     for (int i = 0; i < vec.size(); i++) {
         cout<<"------";
