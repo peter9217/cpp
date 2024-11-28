@@ -8,30 +8,37 @@ class cat {
         string name;
         int age;
     public:
-        cat(const string& objName, int myAge) : name(objName), age(myAge) {}
+        cat(const string& objName, int myAge) : name(objName), age(myAge) {
+            cout << "cat 객체 생성"<<endl;
+        }
         virtual void meow() const {
-        cout << "moew: " << name << endl;
+        cout << "moew : " << name << endl;
     
         }
 };
 class family {
     public:
     void say() {
-        cout << "안녕하세요 가족입니다."; 
+        cout <<"-------- family.say" << endl ; 
+        cout << "안녕하세요 가족입니다." << endl; 
     }
 };
 class kitty : public cat, public family{
     public:
-        kitty(const string& objName, int myAge) : cat(objName, myAge) {}
+        kitty(const string& objName, int myAge) : cat(objName, myAge) {
+            cout << "kitty 객체 생성"<<endl;
+        }
         void meow() const override {
-            cout << "moewwwwww: " << name <<endl;
+            cout << "moewwwwww : " << name <<endl;
         } 
 };
 
 
 int main(){
+    cout <<"-------- rommy 생성" << endl ; 
     kitty rommy("rommy", 10);
     rommy.meow();
+    cout <<"-------- sammy 생성" << endl ; 
     kitty sammy("sammy", 10);
     sammy.meow();
     rommy.say();

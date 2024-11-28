@@ -3,34 +3,34 @@
 using namespace std;
 
 int main(){
-    cout << "\nint\t"<<sizeof(int);
-    cout << "\nshort\t"<<sizeof(short);
-    cout << "\nlong\t"<<sizeof(long);
-    cout << "\nlong long\t"<<sizeof(long long);
-    cout << "\nchar\t"<<sizeof(char);
-    cout << "\ndouble\t"<<sizeof(double) << "\n";
-
-    typedef signed short ss;  //ë³€ìˆ˜ ìžë£Œí˜• ë³„ì¹­
+    cout <<"-------- Å¸ÀÔº° Å©±â"<<"\n" ; 
+    cout << "int\t\t"<<sizeof(int)<<endl;
+    cout << "short\t\t"<<sizeof(short)<<endl;
+    cout << "long\t\t"<<sizeof(long)<<endl;
+    cout << "long long\t"<<sizeof(long long)<<endl;
+    cout << "char\t\t"<<sizeof(char)<<endl;
+    cout << "double\t\t"<<sizeof(double)<<endl;
+    typedef signed short ss;  //º¯¼ö ÀÚ·áÇü º°Äª
     ss width=10, height=10, area=width*height;
-    cout << area<<"\n";
-    cout << (char)127<<"\n";
-    cout << "\"\'\?\\\n"<<"sasd";
+    cout <<"-------- º°ÄªµÈ ÀÚ·áÇü "<<endl; 
+    cout<<"width = "<<width<<"\n";
+    cout <<"area = "<< area<<"\n";
+    cout <<"char(125) = "; 
+    cout << (char)125<<"\n";
     width=5;
-    cout<<width<<"\n";
-    cout<<"-------------"<<"\n";
+    cout <<"-------- ¿­°ÅÇü ¾È¿¡ ÀÖ´Â °ª"<<endl; 
     enum days {aaa=0, bbb=1, ccc=2, sunday=3};
-    cout << days(4)<<"\n";
-    cout << days::bbb;
-    cout << days::ccc<<"\n";
-    cout << days::sunday<<"\n";
-    cout << "---------------\n";
-    days daysOff;
-    int x;
-    cin >> x;
-    daysOff= days(x);
-    if(daysOff==aaa)
-        cout << daysOff <<"-------------------\n";
-    else cout << "asd";
+    cout <<"days(4) = "<< days(4)<<"\n";
+    cout <<"days::b = "<< days::bbb;
+    cout <<"days::c = "<< days::ccc<<"\n";
+    cout <<"days::sunday = "<< days::sunday<<"\n";
+    // days daysOff;
+    // int x;
+    // cin >> x;
+    // daysOff= days(x);
+    // if(daysOff==aaa)
+    //     cout << daysOff <<"-------------------\n";
+    // else cout << "asd";
     return 0;
 
 }

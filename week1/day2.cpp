@@ -3,22 +3,23 @@
 using namespace std; 
 
 int Function(int a){
-    cout << "Function @@\n";
+    cout << "Function ÇÔ¼ö\n";
     return 2+a;
 };
 int main() { 
+    cout <<"-------- cout"<<"\n" ; 
     cout <<"Hello, World!\n"<<"\n" ; 
-    cout <<"Hellodddd\t"<<"dasd\n" ; 
-    cout <<", World!\t"<<"dasd\n" ; 
-    cout <<"!aaaas\t" <<"dasd"; 
-    cout <<(double)7000*700<<"\n" << endl ;
-    //- // í•œì¤„ ì£¼ì„
-    /*-  ë‚˜ì˜¬ ë•Œê¹Œì§€ ì£¼ì„*/
+    cout <<"-------- ÁÂ¿ì °ø°£ Á¤·Ä"<<"\n" ; 
+    cout <<"ÁÂ\t"<<"¿ì\n" ; 
+    cout <<"ÁÂÁÂÁÂ\t"<<"¿ì¿ì¿ì\n" ; 
+    cout <<"ÁÂÁÂ\t" <<"¿ì¿ì"<<endl; 
+    cout <<"-------- ´õºí Å¸ÀÔ ¿¬»ê ÈÄ cout"<<"\n" ; 
+    cout <<(double)7000*700 << endl ;
     int  ab = 0;
+    cout <<"-------- ÇÔ¼ö È£Ãâ"<<"\n" ; 
     ab=Function(3);
-    cout << ab;   // ì“°ì§€ ì•Šìœ¼ë©´ warningì´ ëœ¸
+    cout << ab;   
     cout << "end";
     
     return 0;
 }
-// ë¸Œëžœì¹˜ ìƒì„± ì†ŒìŠ¤íŠ¸ë¦¬
