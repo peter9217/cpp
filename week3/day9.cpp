@@ -3,29 +3,30 @@
 using namespace std;
 
 void increment(int &num) {
-    num += 1; // numì€ ì›ë³¸ ë³€ìˆ˜ë¥¼ ì°¸ì¡°í•˜ë¯€ë¡œ í˜¸ì¶œí•œ ë³€ìˆ˜ì˜ ê°’ì´ ì¦ê°€ë¨
+    cout <<"-------- intcrement ÇÔ¼ö È£Ãâ(b+1)"<<"\n" ; 
+    num += 1; // numÀº ¿øº» º¯¼ö¸¦ ÂüÁ¶ÇÏ¹Ç·Î È£ÃâÇÑ º¯¼öÀÇ °ªÀÌ Áõ°¡µÊ
 }
 
 void justPrintValue(const int &num) {
+    cout <<"-------- justPrintValue ÇÔ¼ö È£Ãâ" << endl ; 
     // num += 1; //read-only
-    cout << num;
 }
 
 int main(){
     int a=0;
     int &aal=a;
-    cout << aal;
 
+    cout <<"-------- b=5"<<"\n" ; 
     int b = 5;
     increment(b); 
-    cout << b; 
+    cout <<"b = "<< b << endl; 
     justPrintValue(b); 
-    cout << b; 
+    cout <<"b = "<< b << endl; 
 
-    cout << a;
     int c=a;
     c++;
-    cout << a;
-    cout << c;
+    cout <<"-------- c=a , c++"<<"\n" ; 
+    cout <<"a = "<< a<< endl;
+    cout <<"c = "<< c<< endl;
     return 0;
 }

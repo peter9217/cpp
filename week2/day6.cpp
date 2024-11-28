@@ -31,8 +31,10 @@ public:
 int main(){
     cat rommy=cat();
     rommy.setName("肺固");
-    cout << rommy.getName();
+    cout <<"-------- 肺固 积己"<<"\n" ; 
+    cout <<"rommy.getName() = "<< rommy.getName()<<endl;
     cat semmy("货固",2);
-    cout << semmy.getName();
+    cout <<"-------- 货固 积己"<<"\n" ; 
+    cout <<"semmy.getName() = "<< semmy.getName()<<endl;
     // cout << cat.meow();
 }
