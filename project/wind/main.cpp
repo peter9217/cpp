@@ -78,7 +78,7 @@ void OnStartButtonClick(HWND hwnd) {
         {'1', 'A'}
     };
 
-    g_isInputChanged = true; // 입력값 변경 상태 설정
+    g_isInputChanged = true; // 입력값 변경 상태 설정s
 }
 
 // Stop 버튼 클릭 처리
